@@ -1,0 +1,403 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bot Setup · Nepbot guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Nepbot">
+        <meta name="identifier" content="图书编号" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Connect_to_Near_wallet.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/nepbot_logo.png' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/nepbot_logo.png' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/nepbot_logo.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/nepbot_logo.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/nepbot_logo.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Invite Nepbot into Discord</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="bot_setup.html">
+            
+                <a href="bot_setup.html">
+            
+                    
+                    Bot Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Commands</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="Connect_to_Near_wallet.html">
+            
+                <a href="Connect_to_Near_wallet.html">
+            
+                    
+                    /verify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="Set_rules_for_roles.html">
+            
+                <a href="Set_rules_for_roles.html">
+            
+                    
+                    /set_rule
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Glossary</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Command_Glossary.html">
+            
+                <a href="Command_Glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bot Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>0. Make sure you own a server first.</strong></p>
+<blockquote>
+<p>[!NOTE]
+Don&#x2019;t have a server yet? <a href="https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-" target="_blank">Click here to create a server.</a></p>
+</blockquote>
+<ol>
+<li>Sign in to discord.</li>
+<li><a href="https://discord.com/oauth2/authorize?client_id=958997413803196476&amp;permissions=8&amp;scope=bot" target="_blank">Click here</a> to add Nepbot to your Discord server.</li>
+<li>Select a server.</li>
+</ol>
+<p><img src="../assets/Bot_Setup/Untitled.png" alt="Untitled"></p>
+<ol>
+<li>Add NepBot as an Administrator.</li>
+</ol>
+<p><img src="../assets/Bot_Setup/Untitled%201.png" alt="Untitled"></p>
+<p><img src="../assets/Bot_Setup/Untitled%202.png" alt="Untitled"></p>
+<ol>
+<li>After authorization, go back to your discord server, and you&#x2019;ll find NepBot there. :)</li>
+<li><p>Upon joining the server, NepBot will create a role for itself in the Discord &#x201C;server settings&#x201D;. <strong>Make sure &#x201C;Nepbot&#x201D; is at the top of the server role hierarchy. It needs to be above any roles it will moderate.</strong> </p>
+<p> <img src="../assets/Bot_Setup/Untitled%203.png" alt="Untitled"></p>
+<p> In &#x201C;server settings&#x201D; go to &#x201D;roles&#x201D;, then hold and drag on the left of each role to manage role hierarchy.</p>
+</li>
+</ol>
+<blockquote>
+<p>[!NOTE]
+Rules are recorded in the smart contract, so it may take a little bit of time and gas fee to add or remove a rule, please be patient.</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Content">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Connect_to_Near_wallet.html" class="navigation navigation-next " aria-label="Next page: /verify">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bot Setup","level":"2.1","depth":1,"next":{"title":"/verify","level":"3.1","depth":1,"path":"doc/Connect_to_Near_wallet.md","ref":"doc/Connect_to_Near_wallet.md","articles":[]},"previous":{"title":"Content","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2","style":"background: none; max-height: 100px; min-height: 30px"},"expandable-chapters":{}},"theme":"default","author":"Nepbot","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"图书编号","variables":{},"title":"Nepbot guide","gitbook":"*","description":"描述"},"file":{"path":"doc/bot_setup.md","mtime":"2022-05-04T08:29:14.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-04T10:28:32.214Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
