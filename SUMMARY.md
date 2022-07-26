@@ -1,15 +1,25 @@
 # Summary
 * [Content](README.md) 
 
-### Invite Nepbot into Discord
-* [Bot Setup](doc/bot_setup.md)
+### Intro
+* [What is Nepbot?](doc/What_is_Nepbot.md)
 
-### Commands
-* [/verify](doc/Connect_to_Near_wallet.md)
-* [/set_rule](doc/Set_rules_for_roles.md)
+### Basics
+* [How to create a NEAR wallet?](doc/Create_a _NEAR_wallet.md)
+* [How to create a Discord server?](doc/Create_a_Discord_Server.md)
 
-### Glossary
-* [Glossary](doc/Command_Glossary.md)
+
+### Guides
+* [Add Nepbot to Discord](doc/Add_Nepbot_to_Discord.md)
+* [Verify Your Assets](doc/Verify_your_Assets.md)
+* [Set Token Rules for Roles](doc/Set_Rules_for_Roles.md)
+* [Create NFT Collections](doc/Create_NFT_collections.md)
+* [List Collections in Server](doc/List_Collections_in_Server.md)
+* [Mint NFT from Collection](doc/Mint_NFT_from_Collection.md)
+* [Command List](doc/Command_Glossary.md)
+
+### Protocol
+* [Contract Address](doc/Contract_Address.md)
 
 ### FAQ
 * [FAQ](doc/FAQ.md)

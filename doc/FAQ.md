@@ -31,3 +31,57 @@
     
     Because the rules in different servers are saved in a smart contract on Near protocol.
     Contract: [https://explorer.near.org/accounts/app.nepbot.near](https://explorer.near.org/accounts/app.nepbot.near)
+    
+- **Does Nepbot support Sender wallets?**
+
+    Yes, it does. You can get verified by connecting with your Sender Wallet as well.
+
+- **Can I verify with a ledger/cold wallet?**
+    
+    Yes, you can. When you use nepbot to verify, the link will take you to your NEAR wallet, and you can use ledger to activate your NEAR account.
+    
+
+- **Can I set several rules to the same role?**
+    
+    Yes, you can. When more than one rules are added for a single role, members will be assigned with role if they fulfill either of the rules.
+    
+
+- **Will I lose the roles if I sell/transfer the tokens/NFTs or unbond my staking on the Octopus Network?**
+    
+    Yes. Nepbot will constantly check the verified wallets to make sure the roles are updated in time.
+    
+
+- **If someone sells/moves the NFT how long will it take before their role is removed?**
+    
+    Usually within minutes, depending on the RPC speed.
+    
+- **Can I link to multiple NEAR wallets with Nepbot?**
+    
+    Currently no. WIP. 
+    
+    You can use /verify to go to the verfication page, and click on “Disconnect”, then verify again with another wallet. 
+    
+- **Except server owneer, can other admins add rules for roles?**
+    
+    No, only the server owner can add rules. 
+    
+- **How can I check if I’m verified or which account I’ve connected to?**
+    
+    Use `/verify` and go to the verification page. You will see a green check and the connected wallet address there if you’re already verified.
+    
+- **Can I change the channel name for #nepbot-join or the private channel for admins?**
+    
+    Yes, you can and it won’t affect the use of Nepbot.
+    
+- **Can I change the channel name for #nepbot-join or the private channel for admins?**
+    
+    Yes, you can and it won’t affect the use of Nepbot.
+    
+- **Can I use Nepbot to verify music NFTs?**
+    
+    Yes of course! :)
+    
+- **Can I change the properties of my NFT after I created it?**
+    
+    No, you can’t. :( 
+    Please make sure the the properties are correct before confirming the creation.

@@ -1,83 +1,69 @@
-# Set rules for roles
+# Set Rules for Roles
 
-**0. Only the server owner can use this command in the server.**
+**⚠️ Make sure the Nepbot is placed above other roles it manages in role hierarchy.**
 
-**0. Invite Nep bot to your Discord.**
+**⚠️  This command is only accessible to server owners.**
 
-**0. Don’t have a role? Create roles first.**
-
-![https://support.discord.com/hc/article_attachments/4412259091351/Permission-Setup-Where-To-Create-Role-gif.gif](https://support.discord.com/hc/article_attachments/4412259091351/Permission-Setup-Where-To-Create-Role-gif.gif)
-
-1. Enter !setrule in the chat.
-
-![Untitled](../assets/Set_rules_for_roles/Untitled.png)
-
-1. You will receive a DM from Nepbot with a link to set token permissions for roles.
-
-![Untitled](../assets/Set_rules_for_roles/Untitled%201.png)
-
-1. Go to the link, which will take you to the “Set rule” page.
-2. Click on “Add” button on the this page, and a window will pop up.
-
-![Untitled](../assets/Set_rules_for_roles/Untitled%202.png)
-
-1. Choose a role to add a rule to it. There’re four types of rules for now.
+1. To set token-gated rules for roles, you can 
+    1. Use the “Set Rule” button in #nepbot-settings
+        ![setrule1](../assets/Set_rules_for_roles/setrule1.png)
+    2. Enter `/setrule` in the chatbox
+        ![setrule2](../assets/Set_rules_for_roles/setrule2.png)
+        
+2. You will receive a private response from Nepbot directly in the server. This message is only visible to you. Click the link to enter the Setrule page.
     
-    Rule types:
-    
-    1. **Token amount: gated by NEP-141 tokens.**
-        
-        You need to fill in the token address and token amount as the threshold. The user can be assigned with the role by holding at least a certain amount of the selected token.
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%203.png)
-        
-        <aside>
-        💡 [How to get my token address?](./doc/How_to_get_my_token_address.md)
-        </aside>
-        
-    2. **OCT roles: gated by the staking states(delegator/validator) on Octopus Appchains.**
-        
-        Choose an appchain and its staking status on that appchain. For example, in the screenshot below, it means that the role is open for delegators on Fusotao appchain.
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%204.png)
-        
-    3. **Near balance: gated by Near balance.**
-        
-        Enter the amount of $Near required for this role. 
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%205.png)
-        
-    4. **NFT: gated by an NEP-171 NFT (including those on Paras or from other NFT contracts)**
-        
-        You’ll need to enter the NFT contract ID and the minimum number of NFT required. NFT contract ID can be found in the details of an NFT. Take Mintbase as an example, you can find the contract ID here. 
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%206.png)
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%207.png)
-        
-        If the NFT are created on Paras with a contract ID of x.paras.near, you will also need to provide the collection URL here to distinct the collections. 
-        
-        ![Untitled](../assets/Set_rules_for_roles/Untitled%208.png)
-        
-2. Click on “ok” to save the rule, approve the transaction and after a while, it will be added to the list and start to take effect.
-    
-    > *This will start a transaction because the rule is saved on chain, and therefore requires a transaction with the smart contract.*
-    > 
-    
-    ![Untitled](../assets/Set_rules_for_roles/Untitled%209.png)
-    
-    It will ask for a 0.02 Near as the estimated maximum amount of gas, but the transaction may cost less than 0.02Near. The rest of the pre-charged fees will be returned to your wallet.
-    
-    ![Untitled](../assets/Set_rules_for_roles/Untitled%2010.png)
-    
-3. Once the rules are set, Nepbot will constantly monitors the verified accounts’ balance and status and manage roles accordingly.
-    
-    You can also delete a rule by hitting the “delete” button under each rule.
-    
-    Make sure that you’re using
-    
-    ![Untitled](../assets/Set_rules_for_roles/Untitled%2011.png)
-    
+    > This link is only valid for 5 mins, and can only be used once. If the link expires, please click on the button or use the command again to get a new link.
+3. Click on “Add” and choose a role to add rule for.
 
-> [!NOTE]
-> One or more tokens can be configured for each role. When more than one rule is configured, a member can get the role if he/she meets the requirement for either one of the configurations.
+    ![setrule3](../assets/Set_rules_for_roles/setrule3.png)
+4. Currently there’re five types of rules
+    - **Token Amount**：
+        - NEP-141 token holdings
+        - Info Required:
+            - Token Address: you can find it here on Near Explorer
+                ![token_address](../assets/Set_rules_for_roles/token_address.gif)
+            - Token Amount: the minimum amount of token holding required to get this role
+    - **OCT Roles**:
+        - Staking states on Octopus Appchains
+        - Info Required:
+            - Appchain ID: select an Appchain from the list
+            - Oct Role: whether a validator or delegator can get this role
+    - **NEAR Balance**:
+        - Amount of NEAR in wallet
+        - Info Required:
+            - Balance: the minimum amount of NEAR balance required to get this role
+    - **NFT**: 
+        - NFT(NEP-171) holdings (including those on Paras or from any contract)
+        - Info Required:
+            - NFT Contract ID：Fill in the contract address of this NFT collection
+            -   *Collection URL:* If it's an Paras NFT collection, that is, if the contract address is `x.paras.near`, you will also see this field and need to copy and paste the link to the collection on Paras here.
+            - Amount: this determined how many pieces of NFTs from the collection one need to hold to get this role
+    - **AstroDAO Roles**:
+        - DAO memberships on AstroDAo
+        - Info Required:
+            - DAO Contract ID: You can find the DAO contract ID on AstroDAO under the DAO name.
+            - AstroDAO roles: whether everyone in this DAO or member in a certain group can get this role
+    
+5. Click OK and approve the transaction to save the rule. It will take you back to the setrule page once succeeds, and the rules will be displayed there.
+    ![setrule4](../assets/Set_rules_for_roles/setrule4.png)
+        
+    > *Here when adding a rule, it will start a transaction asking for a very little bit of gas fee because rules are saved on chain, and therefore requires a transaction with the smart contract.*
+
+    ![setrule5](../assets/Set_rules_for_roles/setrule5.png)
+    > *It will ask for a 0.02 Near as the estimated maximum amount of gas, but the transaction should always cost less than 0.02 Near. The rest of the pre-charged fees will be returned to your wallet.*
+
+    ![setrule6](../assets/Set_rules_for_roles/setrule6.png)
+
+    > Since the rules are saved on chain, you can find the transaction hash here. It links to this transaction details on [Nearblocks.io](https://nearblocks.io/). 
+
+    ![setrule7](../assets/Set_rules_for_roles/setrule7.png)
+\6. Once the rules are set, Nepbot will constantly monitor the verified accounts’ balance and status and update roles accordingly.
+For example, if one transfers or sells the NFT, he/she will also be removed from the corresponding roles.
+    
+    You can also delete a rule by hitting the “delete” button on each rule.
+    
+    ![setrule8](../assets/Set_rules_for_roles/setrule8.png)
+    
+    **Note:**
+    
+    One or more tokens can be configured for each role. When more than one rule is configured, a member can get the role if he/she meets the requirement for either one of the configurations.

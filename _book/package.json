@@ -13,7 +13,8 @@
     "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-expandable-chapters": "^0.2.0",
     "gitbook-plugin-insert-logo": "^0.1.5",
-    "gitbook-plugin-search-pro": "^2.0.2"
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "graceful-fs": "^4.2.10"
   },
   "devDependencies": {
     "gitbook-plugin-theme-hqbook": "^1.1.0"
