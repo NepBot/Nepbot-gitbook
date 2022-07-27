@@ -73,10 +73,6 @@
     
     Yes, you can and it won’t affect the use of Nepbot.
     
-- **Can I change the channel name for #nepbot-join or the private channel for admins?**
-    
-    Yes, you can and it won’t affect the use of Nepbot.
-    
 - **Can I use Nepbot to verify music NFTs?**
     
     Yes of course! :)
