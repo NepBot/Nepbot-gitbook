@@ -5,7 +5,7 @@
 * [What is Nepbot?](doc/What_is_Nepbot.md)
 
 ### Basics
-* [How to create a NEAR wallet?](doc/Create_a _NEAR_wallet.md)
+* [How to create a NEAR wallet?](doc/Create_a_NEAR_wallet.md)
 * [How to create a Discord server?](doc/Create_a_Discord_Server.md)
 
 
