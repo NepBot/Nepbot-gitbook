@@ -14,7 +14,7 @@
 5. After authorization, go back to your discord server, and you’ll find NepBot there. :)
 
     Nepbot will automatically created two channels :     
-    > \#nepbot-join : public channe <br>
+    > \#nepbot-join : public channel <br>
     > \#nepbot-settings : private channel for admins
     
     You can always change the name of these two channels.
