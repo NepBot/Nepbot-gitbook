@@ -22,6 +22,6 @@
 **Make sure “Nepbot” is placed above any roles it will moderate in the role hierarchy.** 
     You can put place Nepbot below the admin roles to make sure Nepbot can never overrule Admins.
     
-    To change role hierarchy, please go to “server settings” — ”roles” — hold and drag on the left of each role to manage role hierarchy.
+    To change role hierarchy, please go to “server settings” — ”roles” — hold and drag on the left of each role to manage role hierarchy
     
     ![move_roles.gif](../assets/Add_Nepbot_to_Discord/move_roles.gif)
