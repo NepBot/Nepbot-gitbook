@@ -20,6 +20,6 @@
   * [Terms of Service](doc//Terms_of_Service.md)
 
 
- **Still have questions about NepBot?**
+**Still have questions about NepBot?**
 
-Report a problem on [Discord](https://discord.com/invite/QdQdHm5Tvm).
+Report a problem on [Discord](https://discord.gg/2BEY9FN6tB).
