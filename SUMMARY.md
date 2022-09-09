@@ -23,3 +23,6 @@
 
 ### FAQ
 * [FAQ](doc/FAQ.md)
+
+### Terms of Service
+* [Terms of Service](doc//Terms_of_Service.md)

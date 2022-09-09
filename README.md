@@ -16,6 +16,9 @@
   * [Contract Address](doc/Contract_Address.md)
  ## FAQ
   * [FAQ](doc/FAQ.md)
+## Terms of Service
+  * [Terms of Service](doc//Terms_of_Service.md)
+
 
  **Still have questions about NepBot?**
 
