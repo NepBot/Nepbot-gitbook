@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>What is Nepbot? · Nepbot guide</title>
+        <title>Verify Your Assets · Nepbot guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -78,10 +78,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Create_a_NEAR_wallet.html" />
+    <link rel="next" href="Set_Rules_for_Roles.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="Add_Nepbot_to_Discord.html" />
     
 
     
@@ -147,7 +147,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="What_is_Nepbot.html">
+        <li class="chapter " data-level="2.1" data-path="What_is_Nepbot.html">
             
                 <a href="What_is_Nepbot.html">
             
@@ -213,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="Verify_Assets.html">
+        <li class="chapter active" data-level="4.2" data-path="Verify_Assets.html">
             
                 <a href="Verify_Assets.html">
             
@@ -472,7 +472,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >What is Nepbot?</a>
+        <a href=".." >Verify Your Assets</a>
     </h1>
 </div>
 
@@ -487,10 +487,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#what-is-nepbot"><b>1. </b>What is Nepbot?</a></li></ul></div><a href="#what-is-nepbot" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="what-is-nepbot"><a name="what-is-nepbot" class="anchor-navigation-ex-anchor" href="#what-is-nepbot"><i class="fa fa-link" aria-hidden="true"></i></a>1. What is Nepbot?</h1>
-<p>Nepbot is an open-source Discord bot for NEP token-based community management, making it easy to set up token-gated channels, manage roles and launch exclusive NFTs for community members.</p>
-<p>With intuitive commands and ensured security, it enables token-gated experience for Discord communities in the NEAR ecosystem, including the Octopus Network. </p>
-<p>By connecting one&#x2019;s own Discord account to a Near wallet, and setting up token-gated Discord roles, community members can verify their identity and assets on Near, therefore gaining access to specific content.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#verify-your-assets"><b>1. </b>Verify your Assets</a></li></ul></div><a href="#verify-your-assets" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="verify-your-assets"><a name="verify-your-assets" class="anchor-navigation-ex-anchor" href="#verify-your-assets"><i class="fa fa-link" aria-hidden="true"></i></a>1. Verify your Assets</h1>
+<p>Connect to your NEAR wallet and get verified.</p>
+<ol>
+<li>In a server with Nepbot, enter /verify or find the &#x201C;verify&#x201D; button<br><img src="../assets/Verify_your_assets/verify1.png" alt="verify1"></li>
+<li>Nepbot will respond with a private message directly in the server that can only be seen by yourself.<blockquote>
+<p>This link is only valid for 5 mins, and can only be used once. If the link expires, please click on &#x201C;verify&#x201D; or use the command &#x201C;/verify&#x201C; to get a new link.
+ Click the button to connect to your wallet.
+<img src="../assets/Verify_your_assets/verify2.png" alt="verify2"></p>
+</blockquote>
+</li>
+<li>Choose a wallet to link with. Nepbot currently support both NEAR wallet and Sender Wallet.
+<img src="../assets/Verify_your_assets/verify3.png" alt="verify3"></li>
+<li>Nepbot will only ask for a limited access to view you account and call method on the smart contract. It will not start any transaction or transfer tokens without your permission.
+<img src="../assets/Verify_your_assets/verify4.png" alt="verify4"></li>
+<li>After successfully linked to your wallet, the page will be redirected to Discord.</li>
+<li>You can always use <code>/checkwallet</code> or <code>/verify</code> to check your verification status and connected wallet.</li>
+</ol>
+<p><img src="../assets/Verify_your_assets/verify5.png" alt="verify5">
+<img src="../assets/Verify_your_assets/verify6.png" alt="verify6"></p>
 
                                 
                                 </section>
@@ -518,12 +533,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Content">
+                <a href="Add_Nepbot_to_Discord.html" class="navigation navigation-prev " aria-label="Previous page: Add Nepbot to Discord">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Create_a_NEAR_wallet.html" class="navigation navigation-next " aria-label="Next page: How to create a NEAR wallet?">
+                <a href="Set_Rules_for_Roles.html" class="navigation navigation-next " aria-label="Next page: Set Token Rules for Roles">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -534,7 +549,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"What is Nepbot?","level":"2.1","depth":1,"next":{"title":"How to create a NEAR wallet?","level":"3.1","depth":1,"path":"doc/Create_a_NEAR_wallet.md","ref":"doc/Create_a_NEAR_wallet.md","articles":[]},"previous":{"title":"Content","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/What_is_Nepbot.md","mtime":"2022-10-19T10:24:05.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-23T19:41:06.666Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Verify Your Assets","level":"4.2","depth":1,"next":{"title":"Set Token Rules for Roles","level":"4.3","depth":1,"path":"doc/Set_Rules_for_Roles.md","ref":"doc/Set_Rules_for_Roles.md","articles":[]},"previous":{"title":"Add Nepbot to Discord","level":"4.1","depth":1,"path":"doc/Add_Nepbot_to_Discord.md","ref":"doc/Add_Nepbot_to_Discord.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/Verify_Assets.md","mtime":"2022-10-19T10:24:05.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-23T19:41:06.666Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

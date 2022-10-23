@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>What is Nepbot? · Nepbot guide</title>
+        <title>Airdrop · Nepbot guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -78,10 +78,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Create_a_NEAR_wallet.html" />
+    <link rel="next" href="Verify_Twitter.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="Poll.html" />
     
 
     
@@ -147,7 +147,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="What_is_Nepbot.html">
+        <li class="chapter " data-level="2.1" data-path="What_is_Nepbot.html">
             
                 <a href="What_is_Nepbot.html">
             
@@ -317,7 +317,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.10" data-path="NEP141_Airdrop.html">
+        <li class="chapter active" data-level="4.10" data-path="NEP141_Airdrop.html">
             
                 <a href="NEP141_Airdrop.html">
             
@@ -472,7 +472,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >What is Nepbot?</a>
+        <a href=".." >Airdrop</a>
     </h1>
 </div>
 
@@ -487,10 +487,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#what-is-nepbot"><b>1. </b>What is Nepbot?</a></li></ul></div><a href="#what-is-nepbot" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="what-is-nepbot"><a name="what-is-nepbot" class="anchor-navigation-ex-anchor" href="#what-is-nepbot"><i class="fa fa-link" aria-hidden="true"></i></a>1. What is Nepbot?</h1>
-<p>Nepbot is an open-source Discord bot for NEP token-based community management, making it easy to set up token-gated channels, manage roles and launch exclusive NFTs for community members.</p>
-<p>With intuitive commands and ensured security, it enables token-gated experience for Discord communities in the NEAR ecosystem, including the Octopus Network. </p>
-<p>By connecting one&#x2019;s own Discord account to a Near wallet, and setting up token-gated Discord roles, community members can verify their identity and assets on Near, therefore gaining access to specific content.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#create-an-airdropfungible-token"><b>1. </b>Create an Airdrop(Fungible Token)</a></li><ul><li><span class="title-icon "></span><a href="#what-airdrop-can-i-create"><b>1.1. </b>What airdrop can I create?</a></li><li><span class="title-icon "></span><a href="#how-to-create-an-airdrop"><b>1.2. </b>How to create an Airdrop?</a></li></ul></ul></div><a href="#create-an-airdropfungible-token" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="create-an-airdropfungible-token"><a name="create-an-airdropfungible-token" class="anchor-navigation-ex-anchor" href="#create-an-airdropfungible-token"><i class="fa fa-link" aria-hidden="true"></i></a>1. Create an Airdrop(Fungible Token)</h1>
+<p><strong>&#x26A0;&#xFE0F; This command is only accessible to server owners.</strong></p>
+<p><strong>&#x26A0;&#xFE0F; Other users can directly interact with the button &#x2019;Claim FT&#x2019; once the Airdrop is created.</strong></p>
+<h2 id="what-airdrop-can-i-create"><a name="what-airdrop-can-i-create" class="anchor-navigation-ex-anchor" href="#what-airdrop-can-i-create"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. What airdrop can I create?</h2>
+<p>You can create a NEAR fungible token (NEP-141) airdrop in a Discord server with Nepbot. The airdrop can be either</p>
+<ul>
+<li>open to all the server members or,</li>
+<li>exclusive to certain roles.</li>
+</ul>
+<p>You&#x2019;ll need to deposit the total amount of the airdrop to create the airdrop, and you can always redeem the remainder that has not been claimed at any time.</p>
+<h2 id="how-to-create-an-airdrop"><a name="how-to-create-an-airdrop" class="anchor-navigation-ex-anchor" href="#how-to-create-an-airdrop"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. How to create an Airdrop?</h2>
+<ol>
+<li><p>Use the command <code>/ft_airdrop</code> in chatbox in the channel where you want to create the airdrop campaign.</p>
+<p> <img src="../assets/NEP141_airdrop/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>Input the following information for this airdrop</p>
+<ul>
+<li><strong>receiver_role</strong>: Decide which roles are eligible to get the airdrop. You can also @everyone if you want this airdrop open to all the server members.</li>
+<li><p><strong>token_id</strong>: Specify a token by the Token Address. You can find it here on Near Explorer.</p>
+<p>  <img src="../assets/NEP141_airdrop/token_address.gif" alt="token address.gif"></p>
+</li>
+<li><p><strong>total_amount:</strong> the total amount of token for this airdrop.</p>
+</li>
+<li><strong>amount_per_share:</strong> amount of tokens per airdrop, or in other ways, how many tokens each wallet can receive.</li>
+<li><strong>duration</strong>: enter an integer to determine how many days the airdrop will last</li>
+</ul>
+</li>
+<li><p>Press enter and you will see a button &#x2018;Airdrop&#x2019; with a link that directs to NEAR wallet to approve the transfer. You need to deposit the total amount of token for this airdrop to the contract before the airdrop goes live.</p>
+<p> <img src="../assets/NEP141_airdrop/deposit_airdrop.gif" alt="deposit airdrop.gif"></p>
+</li>
+<li><p>Approve the transaction and once it&#x2019;s done, go back to the discord server in the same channel where you use the command, you will see the Airdrop campaign is already live.</p>
+</li>
+<li><p>Users can click on the &#x2018;Claim&#x2019; button, and the link will take you to the NEAR wallet to claim the airdrop.</p>
+<p> Each wallet can only claim each airdrop once.</p>
+<p> <img src="../assets/NEP141_airdrop/claim_airdrop.gif" alt="claim airdrop.gif"></p>
+</li>
+<li><p>As the server owner, you can always redeem the unclaimed tokens whenever you want. You can find a &#x2018;Redeem&#x2019; button in #nepbot-settings. Click on the button and you will get a link to your NEAR wallet to approve the transaction.</p>
+<p> <img src="../assets/NEP141_airdrop/redeem_ft.gif" alt="redeem_ft.gif"></p>
+<p> Please note that </p>
+<ol>
+<li>if you redeem the rest of the tokens before the airdrop is over, server members will not be able to claim the airdrop anymore; </li>
+<li>you must redeem the token using the <strong>SAME</strong> wallet as when you created the airdrop.</li>
+</ol>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -518,12 +559,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Content">
+                <a href="Poll.html" class="navigation navigation-prev " aria-label="Previous page: Off-Chain Poll">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Create_a_NEAR_wallet.html" class="navigation navigation-next " aria-label="Next page: How to create a NEAR wallet?">
+                <a href="Verify_Twitter.html" class="navigation navigation-next " aria-label="Next page: Twitter Verification">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -534,7 +575,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"What is Nepbot?","level":"2.1","depth":1,"next":{"title":"How to create a NEAR wallet?","level":"3.1","depth":1,"path":"doc/Create_a_NEAR_wallet.md","ref":"doc/Create_a_NEAR_wallet.md","articles":[]},"previous":{"title":"Content","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/What_is_Nepbot.md","mtime":"2022-10-19T10:24:05.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-23T19:41:06.666Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Airdrop","level":"4.10","depth":1,"next":{"title":"Twitter Verification","level":"4.11","depth":1,"path":"doc/Verify_Twitter.md","ref":"doc/Verify_Twitter.md","articles":[]},"previous":{"title":"Off-Chain Poll","level":"4.9","depth":1,"path":"doc/Poll.md","ref":"doc/Poll.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/NEP141_Airdrop.md","mtime":"2022-10-23T19:00:29.487Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-23T19:41:06.666Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

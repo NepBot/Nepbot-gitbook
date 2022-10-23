@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Verify Your Assets · Nepbot guide</title>
+        <title>Twitter Verification · Nepbot guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -78,10 +78,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Set_Rules_for_Roles.html" />
+    <link rel="next" href="Snapshot.html" />
     
     
-    <link rel="prev" href="Add_Nepbot_to_Discord.html" />
+    <link rel="prev" href="NEP141_Airdrop.html" />
     
 
     
@@ -213,9 +213,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.2" data-path="Verify_your_Assets.html">
+        <li class="chapter " data-level="4.2" data-path="Verify_Assets.html">
             
-                <a href="Verify_your_Assets.html">
+                <a href="Verify_Assets.html">
             
                     
                     Verify Your Assets
@@ -270,7 +270,7 @@
                 <a href="Mint_NFT_from_Collection.html">
             
                     
-                    Mint NFT from Collection
+                    Mint an NFT from Collection
             
                 </a>
             
@@ -278,7 +278,85 @@
             
         </li>
     
-        <li class="chapter " data-level="4.7" data-path="Command_Glossary.html">
+        <li class="chapter " data-level="4.7" data-path="Check_Proposal.html">
+            
+                <a href="Check_Proposal.html">
+            
+                    
+                    List Proposals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="Vote_Proposal.html">
+            
+                <a href="Vote_Proposal.html">
+            
+                    
+                    Vote for an Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="Poll.html">
+            
+                <a href="Poll.html">
+            
+                    
+                    Off-Chain Poll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="NEP141_Airdrop.html">
+            
+                <a href="NEP141_Airdrop.html">
+            
+                    
+                    Airdrop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.11" data-path="Verify_Twitter.html">
+            
+                <a href="Verify_Twitter.html">
+            
+                    
+                    Twitter Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="Snapshot.html">
+            
+                <a href="Snapshot.html">
+            
+                    
+                    Create a Snapshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="Command_Glossary.html">
             
                 <a href="Command_Glossary.html">
             
@@ -394,7 +472,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Verify Your Assets</a>
+        <a href=".." >Twitter Verification</a>
     </h1>
 </div>
 
@@ -409,25 +487,68 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#verify-your-assets"><b>1. </b>Verify your Assets</a></li></ul></div><a href="#verify-your-assets" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="verify-your-assets"><a name="verify-your-assets" class="anchor-navigation-ex-anchor" href="#verify-your-assets"><i class="fa fa-link" aria-hidden="true"></i></a>1. Verify your Assets</h1>
-<p>Connect to your NEAR wallet and get verified.</p>
-<ol>
-<li>In a server with Nepbot, enter /verify or find the &#x201C;verify&#x201D; button<br><img src="../assets/Verify_your_assets/verify1.png" alt="verify1"></li>
-<li>Nepbot will respond with a private message directly in the server that can only be seen by yourself.<blockquote>
-<p>This link is only valid for 5 mins, and can only be used once. If the link expires, please click on &#x201C;verify&#x201D; or use the command &#x201C;/verify&#x201C; to get a new link.
- Click the button to connect to your wallet.
-<img src="../assets/Verify_your_assets/verify2.png" alt="verify2"></p>
-</blockquote>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#verify-twitter"><b>1. </b>Verify Twitter</a></li><ul><li><span class="title-icon "></span><a href="#what-kinds-of-twitter-rules-can-i-create-for-a-role"><b>1.1. </b>What kinds of Twitter rules can I create for a role?</a></li><li><span class="title-icon "></span><a href="#please-note-that"><b>1.2. </b>Please note that:</a></li></ul></ul></div><a href="#verify-twitter" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="verify-twitter"><a name="verify-twitter" class="anchor-navigation-ex-anchor" href="#verify-twitter"><i class="fa fa-link" aria-hidden="true"></i></a>1. Verify Twitter</h1>
+<p><strong>&#x26A0;&#xFE0F; This command is only accessible to server owners.</strong></p>
+<p><strong>&#x26A0;&#xFE0F; Once the Twitter Rule is created, server members can directly interact with the button under the &#x2018;Twitter rule&#x2019; message.</strong></p>
+<p>Other than tokens, Nepbot can also verify your twitter account and activities and assign roles accordingly.</p>
+<p><img src="../assets/Verify_twitter/Untitled1.png" alt="Untitled"></p>
+<h2 id="what-kinds-of-twitter-rules-can-i-create-for-a-role"><a name="what-kinds-of-twitter-rules-can-i-create-for-a-role" class="anchor-navigation-ex-anchor" href="#what-kinds-of-twitter-rules-can-i-create-for-a-role"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. What kinds of Twitter rules can I create for a role?</h2>
+<ul>
+<li>Follow one or several twitter account</li>
+<li>Retweet one or several tweets</li>
+<li><p>Like one or several tweet</p>
 </li>
-<li>Choose a wallet to link with. Nepbot currently support both NEAR wallet and Sender Wallet.
-<img src="../assets/Verify_your_assets/verify3.png" alt="verify3"></li>
-<li>Nepbot will only ask for a limited access to view you account and call method on the smart contract. It will not start any transaction or transfer tokens without your permission.
-<img src="../assets/Verify_your_assets/verify4.png" alt="verify4"></li>
-<li>After successfully linked to your wallet, the page will be redirected to Discord.</li>
-<li>You can always use <code>/checkwallet</code> or <code>/verify</code> to check your verification status and connected wallet.</li>
+<li><p>To create a Twitter Rule Verification, you can start with the command <code>/set_twitter_rule</code></p>
+</li>
+<li><p>Select a role. Users will automatically get the role if they meet the specified requirements after twitter verification. </p>
+<p> <img src="../assets/Verify_twitter/Untitled2.png" alt="Untitled"></p>
+</li>
+<li><p>Then set Twitter rules required to get this role. There&#x2019;re three types of rules:</p>
+<ol>
+<li><strong>follow_username</strong>: Follow Twitter account(s). Input twitter handle(s) without &#x2018;@&#x2019; here. </li>
+<li><strong>rt_tweet_link</strong>: Retweet tweet(s). Input the twitter link(s) here.</li>
+<li><p><strong>like_tweet_link: L</strong>ike tweet(s). Input the twitter link(s) here.</p>
+<p>You can add more than one rules, for example, the requirements could be both follow accounts and retweet the tweet.</p>
+<p>You can add more than one accounts/tweets for each type of rule by using &#x2018;+&#x2019; in between, for example, follow_username: nepbot4near+NearProtocol</p>
+<p><img src="../assets/Verify_twitter/Untitled3.png" alt="Untitled"></p>
+</li>
 </ol>
-<p><img src="../assets/Verify_your_assets/verify5.png" alt="verify5">
-<img src="../assets/Verify_your_assets/verify6.png" alt="verify6"></p>
+</li>
+<li><p>Press enter when you set up the rules.</p>
+</li>
+<li><p>You will see a <strong>public</strong> message posted by Nepbot with two buttons</p>
+<ul>
+<li>Verify Twitter</li>
+<li><p>Disconnect Twitter</p>
+<p><img src="../assets/Verify_twitter/Untitled4.png" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+<li><p>Server members can now click on &#x2018;Verify Twitter&#x2019; to verify and get the roles accordingly.</p>
+<ul>
+<li><p>If the user verifies Twitter in this server for the <strong>first time</strong>, the user will receive a link to Twitter authorization page, where the user will need to authorize Nepbot from their Twitter.</p>
+<p>  <img src="../assets/Verify_twitter/Untitled5.png" alt="Untitled"></p>
+<p>  <img src="../assets/Verify_twitter/Untitled6.png" alt="Untitled"></p>
+<p>  Once authorized, Nepbot will automatically check if you meet the requirements and automatically assign you with the corresponding role.</p>
+</li>
+<li><p>If you have connected to your twitter before in this server, you can simply click on &#x2018;Verify Twitter&#x2019; and the bot will automatically check if you&#x2019;re eligible to this role.</p>
+<p>  <img src="../assets/Verify_twitter/Untitled7.png" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="please-note-that"><a name="please-note-that" class="anchor-navigation-ex-anchor" href="#please-note-that"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Please note that:</h2>
+<ul>
+<li>To use Twitter verification, you must make sure your NEAR wallet is logged in.<ul>
+<li>No need to verify the wallet through Nepbot</li>
+<li>This is to ensure <em>**</em>the link cannot be used by others</li>
+</ul>
+</li>
+<li><p>You can always choose to disconnect your Twitter from your discord by click on &#x2018;Disconnect Twitter&#x2019;. We will delete the data instantly.</p>
+<p>  You can also deauthorize Nepbot on Twitter in More - Settings and Support - Security and account access - Apps and sessions - Connected apps - Find &#x2018;Nepbot4near&#x2019; and Revoke app permissions.</p>
+<p>  <img src="../assets/Verify_twitter/Untitled8.png" alt="Untitled"></p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -455,12 +576,12 @@
 
             
                 
-                <a href="Add_Nepbot_to_Discord.html" class="navigation navigation-prev " aria-label="Previous page: Add Nepbot to Discord">
+                <a href="NEP141_Airdrop.html" class="navigation navigation-prev " aria-label="Previous page: Airdrop">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Set_Rules_for_Roles.html" class="navigation navigation-next " aria-label="Next page: Set Token Rules for Roles">
+                <a href="Snapshot.html" class="navigation navigation-next " aria-label="Next page: Create a Snapshot">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -471,7 +592,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Verify Your Assets","level":"4.2","depth":1,"next":{"title":"Set Token Rules for Roles","level":"4.3","depth":1,"path":"doc/Set_Rules_for_Roles.md","ref":"doc/Set_Rules_for_Roles.md","articles":[]},"previous":{"title":"Add Nepbot to Discord","level":"4.1","depth":1,"path":"doc/Add_Nepbot_to_Discord.md","ref":"doc/Add_Nepbot_to_Discord.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/Verify_your_Assets.md","mtime":"2022-09-20T06:38:39.700Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-20T07:09:22.415Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Twitter Verification","level":"4.11","depth":1,"next":{"title":"Create a Snapshot","level":"4.12","depth":1,"path":"doc/Snapshot.md","ref":"doc/Snapshot.md","articles":[]},"previous":{"title":"Airdrop","level":"4.10","depth":1,"path":"doc/NEP141_Airdrop.md","ref":"doc/NEP141_Airdrop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","-search","search-pro","splitter","insert-logo","anchor-navigation-ex","flexible-alerts","hide-element","expandable-chapters","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./assets/nepbot_logo.png","bookmark":"./assets/nepbot_logo.png","appleTouch":"./assets/nepbot_logo.png","appleTouchMore":{"120x120":"./assets/nepbot_logo.png","180x180":"./assets/nepbot_logo.png"}},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc38b35a-1cd8-498b-bc27-607f24766911%2Fnepbot_logo-_color.png?table=block&id=8987307d-cbdd-43c5-a26c-c2554a98c482&spaceId=dd5abf6f-f4a4-45f8-b5b8-5944df730a2b&width=250&userId=e6d2f283-9f7f-4749-992c-cc4c6ca8d3a0&cache=v2"},"expandable-chapters":{}},"theme":"default","author":"Nepbot Team","lang":"en","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nepbot guide","gitbook":"*"},"file":{"path":"doc/Verify_Twitter.md","mtime":"2022-10-23T19:37:52.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-23T19:41:06.666Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -506,6 +627,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
